@@ -10,6 +10,11 @@
   max-width: 1000px;
   margin: 1em auto;
   border-radius: 20px;
+
+  @media (max-width: 1000px) {
+    margin: 1em;
+    padding-bottom: 1em;
+  }
 }
 
 .site-masthead h1 {
@@ -17,22 +22,22 @@
   border-bottom: 2px solid bluw;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-
   font-size: 3em;
   margin-bottom: -.2em;
   padding: 0 2rem;
   font-weight: 700;
 
-  // @media (min-width: $on-tablet) {
-  //   font-size: 4em;
-  // }
+  @media (max-width: 1000px) {
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: .2em;
+  }
 }
 
 .site-masthead h2 {
   color: $muted-text-color;
   font-size: 1.25em;
   margin: 0 auto;
-  // max-width: 50%;
   line-height: 1.25em;
   font-family: 'Josefin Sans', sans-serif;
   padding: 0 2rem;
@@ -42,9 +47,10 @@
   color: #f9f9f9;
   opacity: .7;
 
-  // @media (min-width: $on-tablet) {
-  //   font-size: 2em;
-  // }
+  @media (max-width: 1000px) {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
 }
 
 .hero-list {
@@ -175,8 +181,16 @@
   display: block;
   margin: 3em auto;
 
+  @media (max-width: 1000px) {
+    margin: 1em 0;
+  }
+
   h3 {
     margin: 0;
+
+    @media (max-width: 1000px) {
+      font-size: .9em;
+    }
   }
 
   input {
@@ -188,6 +202,10 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: .8em;
     font-weight: 400;
+
+    @media (max-width: 1000px) {
+      font-size: .7em;
+    }
   }
 
   button {
@@ -199,6 +217,10 @@
     font-weight: 400;
     border: none;
     font-size: .8em;
+
+    @media (max-width: 1000px) {
+      font-size: .7em;
+    }
   }
 
   button:hover {
