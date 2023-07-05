@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% if site.data.menu and site.paginate and site.paginate_path and paginator.page > 1 %}
+<!-- {% include menu.html %} -->
+{% elsif site.paginate and site.paginate_path and paginator.page > 1 %}
+{% include back-link.html %}
+{% else %}
+<header class="site-masthead">
+    <!-- {% include menu.html %} -->
+    {% if site.title %}
+    <h1>
+        <!-- {{ site.title | capitalize }} -->
+        STOP THE SPRAWL
+    </h1>
+    {% endif %}
+    {% if site.title %}
+    <h2>
+        {{ site.description }}
+    </h2>
+    {% endif %}
+</header>
+{% endif %}
+
+<main class="home" id="main" role="main" aria-label="Content">
+    <div class="hero">
+        <p class="welcome-text">
+            Thank you for joining our mailing list! We're excited to work with you to make Campbell River economically
+            and ecologically resillient!
+            <a id="home-button" href="/">Return to Main Page</a>
+        </p>
+    </div>
+</main>
+
+<div class="footer">
+    2023 © Stop the Sprawl - This campaign is led by Strong Towns Campbell River, & CR Creeks, Trees and Trails. No
+    affiliation with the City of Campbell River.
+</div>
